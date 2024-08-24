@@ -32,7 +32,7 @@
                     },
                     backgroundImage: {
                         connect: "url('./assets/bg.jpg')",
-                        living: "url"
+                        living: "url('./assets/living_room.jpg')"
                     },
                 }
             }
@@ -301,8 +301,42 @@
         </section>
 
         <!-- Unique Section -->
-        <Section>
-
+        <Section class="">
+            <div class="bg-living hero min-h-screen w-full bg-cover">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="container mx-auto">
+                        <h1 class="mb-5 text-7xl font-extrabold ">Discover Your Place To live</h1>
+                        <p class="mb-5 text-3xl ">
+                            GET STARTED IN FEW CLICKS
+                        </p>
+                        <div class="flex flex-col items-center">
+                            <div class="join mb-4">
+                                <input class=" join-item btn bg-[#abef5f]" type="radio" name="options" aria-label="All" />
+                                <input class="join-item btn bg-[#abef5f]" type="radio" name="options" aria-label="For Rent" />
+                                <input class="join-item btn bg-[#abef5f]" type="radio" name="options" aria-label="For Sale" />
+                            </div>
+                            <div class="join flex flex-col space-y-6 lg:flex-row lg:space-y-0">
+                                <div>
+                                  <div class="">
+                                    <input class=" input input-bordered join-item lg:w-96" placeholder="Search"/>
+                                  </div>
+                                </div>
+                                <select class="select select-bordered join-item">
+                                  <option disabled selected >Property</option>
+                                  <option class="text-black">House</option>
+                                  <option class="text-black">Apartment</option>
+                                  <option class="text-black">Rental</option>
+                                </select>
+                                <div class="indicator">
+                                  <span class="indicator-item badge bg-red-500 text-white">new</span>
+                                  <button class="btn join-item bg-logo_color rounded-2xl">Search</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </Section>
 
         <!-- Lets Connect section -->
@@ -343,7 +377,8 @@
                     <i class="fa-solid fa-arrow-right bg-logo_color border rounded-full p-1 -rotate-45 text-black"></i>
                     <a class="text-2xl font-extrabold ml-1">Rinterio</a>
                 </div>
-                <p class="text-[#737373] font-medium text-center lg:px-96">The barn house captivates with its blend of rustic
+                <p class="text-[#737373] font-medium text-center lg:px-96">The barn house captivates with its blend of
+                    rustic
                     charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <div class="text-center px-8 mb-12 ">
@@ -354,11 +389,12 @@
                     <a class="font-medium text-[#E9E9E9]">Blogs</a>
                     <a href="#contact" class="font-medium text-[#E9E9E9]">Contact Us</a>
                 </div>
-                
-                <button class="border-none btn bg-logo_color rounded-3xl font-extrabold text-lg mt-12 ">Book Consultant <i
-                    class="fa-solid fa-arrow-right bg-black text-white border rounded-full p-1 -rotate-45"></i></button>
+
+                <button class="border-none btn bg-logo_color rounded-3xl font-extrabold text-lg mt-12 ">Book Consultant
+                    <i
+                        class="fa-solid fa-arrow-right bg-black text-white border rounded-full p-1 -rotate-45"></i></button>
             </div>
-            
+
         </div>
     </footer>
 </body>
